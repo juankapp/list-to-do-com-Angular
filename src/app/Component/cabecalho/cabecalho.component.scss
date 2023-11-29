@@ -1,0 +1,37 @@
+.header {
+    background-color: rgb(255, 255, 255);
+    color: #00af46;
+    padding: 15px;
+    -webkit-box-shadow: 2px 17px 25px -18px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 17px 25px -18px rgba(0,0,0,0.75);
+box-shadow: 2px 17px 25px -18px rgba(0,0,0,0.75);
+
+
+}
+
+.agrupar-logo-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 30px;
+    padding: 0px; margin: 0px; border: 0px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+@media (max-width: 576px) {
+    i {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,31 @@
+footer {
+    background-color: white;
+    -webkit-box-shadow: 1px -9px 30px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px -9px 30px -4px rgba(0,0,0,0.75);
+box-shadow: 1px -9px 30px -4px rgba(0,0,0,0.75);
+padding: 10px;
+position:absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+    color: #00af46;
+    font-size: 23px
+}
+
+a {
+    color: #00af46;
+}
+
+@media (max-width: 576px) {
+    p {
+        font-size: 18px;
+    }
+
+    i {
+        font-size: 18px;
+    }
+}

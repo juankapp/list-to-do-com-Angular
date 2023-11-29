@@ -1,0 +1,26 @@
+.pesquisa {
+    margin-top: 30px;
+}
+
+.criar_anotacao {
+    margin-top: 25px;
+}
+
+button {
+    padding: 15px;
+}
+
+@media (max-width: 576px) {
+    button {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .pesquisa {
+        margin-top: 20px;
+    }
+    
+    .criar_anotacao {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+.menu {
+  min-height: 60vh;
+  -webkit-box-shadow: 0px 0px 44px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 44px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 44px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.semAnotacoes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40vh;
+}
+

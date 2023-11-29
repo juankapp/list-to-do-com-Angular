@@ -1,0 +1,25 @@
+<div class="card" style="min-height: 35rem;" >
+  <img
+    src="https://images3.kabum.com.br/produtos/fotos/435643/smartphone-samsung-galaxy-a54-5g-128gb-8gb-ram-octa-core-camera-tripla-de-50mp-tela-infinita-de-6-4-preto-sm-a546ezklzto_1678372969_m.jpg
+      "
+    class="card-img-top"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ anotacao.Titulo.length > 50 ? anotacao.Titulo.substr(0,60) + "..."  : anotacao.Titulo  }}</h5>
+
+    <div>
+      <p class="card-text">
+        {{ anotacao.Descricao.length > 50 ? anotacao.Descricao.substr(0,60) + "..." : anotacao.Descricao  }}
+      </p>
+      <hr/>
+      <div>
+       <p style="font-size: 14px; color: green;"> {{anotacao.Dia.toLocaleString('en-GB', {hour12: false})}}</p>
+      </div>
+    </div>
+
+    <div class="separar-botoes">
+      <a href="#" class="btn btn-warning">Editar</a>
+      <a href="#" class="btn btn-danger">Excluir</a>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,29 @@
-<h1>OI</h1>
+<div class="container mt-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-8 col-md-10 col-xs-8 justify-content-center">
+      <div class="input-group mb-3 pesquisa">
+        <span class="input-group-text" id="basic-addon1"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Encontre sua Anotação"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+    </div>
+
+    <div class="col-4 col-md-2 col-xs-4 criar_anotacao">
+      <a routerLink="/nova-anotacao">
+        <button  type="button" class="btn btn-success">
+          <i class="fa-solid fa-plus"></i> Criar Anotação
+        </button>
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+<app-menu-anotacoes [Anotacoes]="Anotacoes"></app-menu-anotacoes>

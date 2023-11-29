@@ -1,0 +1,23 @@
+<div class="container mt-5 mb-5 menu">
+  <div *ngIf="Anotacoes; else NaoHaAnotacoes">
+    <div class="row Linha-dos-Cards" >
+      <div class="col-12 col-md-3 mt-3 mb-3" *ngFor="let Anotacao of Anotacoes">
+        <app-card-anotacao [anotacao]="Anotacao"></app-card-anotacao>
+      </div>
+      
+    </div>
+  </div>
+
+  <ng-template #NaoHaAnotacoes>
+    <div class="row semAnotacoes">
+      <div class="col-12">
+        <h1 style="color: #00af46;">Não há Anotações!</h1>
+        <a routerLink="/nova-anotacao">
+          <button style="padding: 15px" type="button" class="btn btn-success">
+            <i class="fa-solid fa-plus"></i> Criar Anotação
+          </button>
+        </a>
+      </div>
+    </div>
+  </ng-template>
+</div>
