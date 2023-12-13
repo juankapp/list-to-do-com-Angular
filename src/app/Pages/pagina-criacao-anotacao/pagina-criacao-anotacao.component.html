@@ -5,29 +5,31 @@
     </div>
   </div>
   <div class="row">
-    <div class="mb-3 mt-5">
-      <label for="exampleFormControlInput1" class="form-label">Titulo:</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" />
-    </div>
-    <div class="mb-3">
-      <label for="formFile" class="form-label">Adicione uma imagem:</label>
-      <input class="form-control" type="file" id="formFile" />
-    </div>
-
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label"
-        >Anotação</label
-      >
-      <textarea
-        class="form-control"
-        id="exampleFormControlTextarea1"
-        rows="3"
-      ></textarea>
-    </div>
+  
+      <div class="mb-3 mt-5">
+        <label for="exampleFormControlInput1" class="form-label">Titulo:</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="TituloAnotacao"/>
+      </div>
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Adicione uma imagem:</label>
+        <input class="form-control" type="file" id="formFile" [(ngModel)]="ImagemAnotacao" (change)="onFileSelected($event)"/>
+      </div>
+  
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Anotação</label
+        >
+        <textarea
+         [(ngModel)]="TextoAnotacao"
+          class="form-control"
+          rows="3"
+        ></textarea>
+      </div>
+    
   </div>
   <div class="row">
     <div class="col-6 col-md-2">
-        <button style="padding: 10px" type="button" class="btn btn-success">
+        <button style="padding: 10px" type="button" class="btn btn-success" (click)="FazerValidacao()">
             <i class="fa-solid fa-plus"></i> Adicionar Anotação
           </button>
           
@@ -41,3 +43,5 @@
     </div>
   </div>
 </div>
+
+<app-toast-mensagens (FecharModal)="fecharModalErro()" [TextoModal]="TextoModal"></app-toast-mensagens>

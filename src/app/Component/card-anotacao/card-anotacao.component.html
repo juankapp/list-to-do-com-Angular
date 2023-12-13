@@ -1,7 +1,6 @@
 <div class="card" style="min-height: 35rem;" >
   <img
-    src="https://images3.kabum.com.br/produtos/fotos/435643/smartphone-samsung-galaxy-a54-5g-128gb-8gb-ram-octa-core-camera-tripla-de-50mp-tela-infinita-de-6-4-preto-sm-a546ezklzto_1678372969_m.jpg
-      "
+    [src]= "anotacao.Image ? anotacao.Image : '../../../assets/istockphoto-514159140-612x612.jpg'"
     class="card-img-top"
   />
   <div class="card-body">
@@ -19,7 +18,7 @@
 
     <div class="separar-botoes">
       <a href="#" class="btn btn-warning">Editar</a>
-      <a href="#" class="btn btn-danger">Excluir</a>
+      <a href="#" class="btn btn-danger" (click)="ExcluirAnotacao(anotacao)">Excluir</a>
     </div>
   </div>
 </div>

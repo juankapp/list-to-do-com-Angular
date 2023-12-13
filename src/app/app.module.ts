@@ -9,6 +9,8 @@ import { RodapeComponent } from './Component/rodape/rodape.component';
 import { MenuAnotacoesComponent } from './Component/menu-anotacoes/menu-anotacoes.component';
 import { CardAnotacaoComponent } from './Component/card-anotacao/card-anotacao.component';
 import { PaginaCriacaoAnotacaoComponent } from './Pages/pagina-criacao-anotacao/pagina-criacao-anotacao.component';
+import { ToastMensagensComponent } from './component/toast-mensagens/toast-mensagens.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { PaginaCriacaoAnotacaoComponent } from './Pages/pagina-criacao-anotacao/
     RodapeComponent,
     MenuAnotacoesComponent,
     CardAnotacaoComponent,
-    PaginaCriacaoAnotacaoComponent
+    PaginaCriacaoAnotacaoComponent,
+    ToastMensagensComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

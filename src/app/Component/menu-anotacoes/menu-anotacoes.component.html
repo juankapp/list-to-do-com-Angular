@@ -1,5 +1,5 @@
 <div class="container mt-5 mb-5 menu">
-  <div *ngIf="Anotacoes; else NaoHaAnotacoes">
+  <div *ngIf="Anotacoes.length > 0; else NaoHaAnotacoes">
     <div class="row Linha-dos-Cards" >
       <div class="col-12 col-md-3 mt-3 mb-3" *ngFor="let Anotacao of Anotacoes">
         <app-card-anotacao [anotacao]="Anotacao"></app-card-anotacao>

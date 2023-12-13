@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Anotacao } from '../../interfaces/anotacao';
+import { DadosAnotacaoService } from '../../Service/dados-anotacao.service';
+
 
 @Component({
   selector: 'app-pagina-inicial',
@@ -7,8 +9,11 @@ import { Anotacao } from '../../interfaces/anotacao';
   styleUrl: './pagina-inicial.component.scss'
 })
 export class PaginaInicialComponent {
-  Anotacoes: Array<Anotacao> = 
-  [{ Titulo: "juan", Descricao: '19', Dia: new Date}, 
-  {Titulo: "Lorem ipsum dolor sit amet. Eos eius beatae in maiores magni et molestiae quia", Descricao: 'Lorem ipsum dolor sit amet. Eos eius beatae in maiores magni et molestiae quia', Dia: new Date}
-]
+  Anotacoes: Array<Anotacao> = []
+  
+  constructor(public anotacoes: DadosAnotacaoService) {
+    this.Anotacoes = anotacoes.ExibirAnotacoes()
+
+  }
+  
 }
